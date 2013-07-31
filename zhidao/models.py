@@ -38,3 +38,4 @@ class Answer(models.Model):
     #status = models.IntegerField()
     def __unicode__(self):
         return self.detail
+    

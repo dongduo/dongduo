@@ -14,3 +14,4 @@ class Tweet(models.Model):
     # Generic Relation to Comment
     comments = generic.GenericRelation(Comment)
     
+    

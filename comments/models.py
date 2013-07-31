@@ -19,3 +19,4 @@ class Comment(models.Model):
     content_object = generic.GenericForeignKey()
     def __unicode__(self):
         return self.content
+    

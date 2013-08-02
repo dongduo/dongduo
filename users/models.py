@@ -1,14 +1,14 @@
 from django.db import models
 
-class User(models.Model):
+class UserProfile(models.Model):
     """
-    Model for a user in users
+    The User Profile
     """
 
     #TODO: VoteApp
-    #TODO: Other attributes such as Email etc. 
+    #TODO: figure out boundary between profile and auth
+    nickname = models.CharField(max_length=10)
     birthday = models.DateField()  
-    name   = models.CharField(max_length=50)
 
     def __unicode__(self):
         return self.name

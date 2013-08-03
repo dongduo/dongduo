@@ -121,17 +121,18 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    # Django Contrib Packages
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
-    'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    # framework for exposing a REST API
+
+    # External Dependencies
     'rest_framework',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'south',
+
+    # Our Apps
     'comments',
     'zhidao',
     'tweets',

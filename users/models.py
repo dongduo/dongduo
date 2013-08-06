@@ -11,5 +11,5 @@ class UserProfile(models.Model):
     birthday = models.DateField()  
 
     def __unicode__(self):
-        return self.name
+        return "<%s, %s>" % (self.nickname, self.birthday)
     

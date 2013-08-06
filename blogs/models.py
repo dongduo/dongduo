@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.contenttypes import generic
 from comments.models import Comment
-from users.models import User
+from users.models import UserProfile
 
 class Post(models.Model):
     """
@@ -9,7 +9,7 @@ class Post(models.Model):
     """
 
     #TODO: VoteApp
-    author   = models.ForeignKey(User)
+    author   = models.ForeignKey(UserProfile)
     pub_date = models.DateTimeField()  
     title    = models.CharField(max_length=200)
     detail   = models.TextField()
@@ -20,4 +20,4 @@ class Post(models.Model):
     
     def __unicode__(self):
         return self.title
-    
+

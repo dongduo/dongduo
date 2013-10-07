@@ -1,8 +1,15 @@
-# Django Dev Dependencies
-Django==1.5
+# web dev
+flask==0.10.1
+celery==3.0
+
+# database & orm
 psycopg2==2.5
-djangorestframework==2.3
-South==0.8.1
+SQLAlchemy==0.8.2
+alembic==0.6.0
+
+# deployment
+fabric==1.8
+uwsgi==1.9
 
 # Nice Little Tools
 ipython==0.13
